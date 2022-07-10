@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    min-height: 100vh;
+    background-color: rgb(126, 163, 233);
+}
+.container {
+width: 1150px;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color:rgb(217, 244, 255);
+    margin: 20px;
+    border: 1px solid darkblue;
+    overflow:hidden;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card img{
+    transition: 0.5s;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px;
+}
+.container .card h1{
+    font-size: 2rem;
+    color: rgb(0, 0, 61);
+}
+.container .card .content{
+    padding: 20px;
+    text-align:center;
+
+}
+.container .card .content p{
+    color: #666;
+    transition: 0.5s;
+    
+}
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+.container .card:hover{
+    background-color: aquamarine;
+    color: white;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #666;
+    border-color: aquamarine;
+}
+
+.container .card:hover p{
+    color: white;
+}
+.container .card:hover a{
+    color: black;
+    background-color: white;
+}
